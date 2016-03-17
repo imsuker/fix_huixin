@@ -69,7 +69,7 @@ $(function(){
   $("#go_order").click(function(){
      var name = $('#order_info_name').val();
      var tel = $("#order_info_tel").val();
-     var product = $("#fix_title").val();
+     var product = $.trim($("#fix_title").text());
      if(!name || !tel){
         alert('请输入姓名或电话号');
         return;
@@ -79,7 +79,7 @@ $(function(){
      }
      $("#go_order").val('正在预约...');
     doing = true;
-    var url = '#';
+    var url = '/action/public/v3/closed_fund_leads';
     $.post(url, {
       name : name,
       tel : tel,
