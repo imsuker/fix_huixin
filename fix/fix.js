@@ -16,3 +16,27 @@ tab_lis.click(function(){
 $('#order_info input[type=text]').click(function(){
 	$(this).val('');
 });
+
+
+var oProgress = {
+  'year' : {
+    now : 10 //进度10%
+  },
+  'quarter' : {
+    now : 20 //进度20%
+  },
+  'week' : {
+    now : 30
+  }
+};
+$(function(){
+  $.each(oProgress, function(key, oData){
+    var dParent = $(".id-"+key);
+    if(dParent.size() == 0){
+      return;
+    }
+    dParent.find('.progress_now').html('已完成'+oData.now+'%').show();;
+    dParent.find('.progress_finish').css('width', oData.now/100*200 + 'px');
+    dParent.find('.progress_box').show();
+  });
+});
