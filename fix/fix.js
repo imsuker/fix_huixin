@@ -67,6 +67,11 @@ $(function(){
 $(function(){
   var doing = false;
   $("#go_order").click(function(){
+    var agree = $(".check_agreement input").prop('checked');
+    if(!agree){
+      alert('需要同意并遵守"协议书"才可以预约该产品!');
+      return;
+    }
      var name = $('#order_info_name').val();
      var tel = $("#order_info_tel").val();
      var product = $.trim($("#fix_title").text());
