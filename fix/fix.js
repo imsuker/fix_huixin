@@ -74,6 +74,9 @@ $(function(){
         alert('请输入姓名或电话号');
         return;
      }
+     if($("#go_order").val() == "预约成功"){
+        return;
+     }
      if(doing){
        alert('正在预约...');
        return;
