@@ -18,10 +18,10 @@ var oProgress = {
 };
 //各个产品页面，点击委托协议书后，显示的甲方名字
   var aJiafang = {
-    'huixin_week.html' : 'week',
-    'huixin_quarter.html' : 'quarter',
-    'huixin_year.html' : 'year',
-    'zhangwei_year.html' : 'zhangwei'
+    'huixin_week.html' : '赵海峰',
+    'huixin_quarter.html' : '赵海峰',
+    'huixin_year.html' : '赵海峰',
+    'zhangwei_year.html' : '张伟'
   };
 
 
