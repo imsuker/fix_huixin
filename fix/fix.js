@@ -7,13 +7,13 @@
 //now:10 代表进度为10%
 var oProgress = {
   'year' : {   //huixin_year.html
-    now : 10 //进度10%
+    now : 0 //进度10%
   },
   'quarter' : { //huixin_quarter.html
-    now : 20 //进度20%
+    now : 0 //进度20%
   },
   'week' : {  //huixin_week.html
-    now : 30
+    now : 0
   }
 };
 //各个产品页面，点击委托协议书后，显示的甲方名字
