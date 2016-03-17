@@ -1,5 +1,4 @@
 .fix_box{width:1060px;margin:0 auto 16px;background:#fff;font-family:"Microsoft YaHei";}
-.fix_box:last-child{margin-bottom:0;}
 .fix_box h3{border-bottom:1px solid #dbb553;height:70px;padding-top:35px;font-size:20px;font-weight:bold;}
 .fix_box i{heigth:24px;border-left:3px solid #dbb553;margin:0 13px 0 30px;}
 .fix_box table{margin:20px 30px;}
@@ -40,3 +39,14 @@
 #charts_box{text-align:center;padding:20px 30px;overflow:hidden;}
 #charts_box img{display:none;}
 #charts_box img.on{display:inline;}
+
+
+
+
+.agreement_em{font-weight:bold;font-style:normal}
+.fix_box p{line-height:3}
+#agreement #fix{background:#fff;padding-top:84px;}
+#agreement .title{text-align:center;font-weight:normal}
+.title_box{position:relative;}
+.hr_top{position:absolute;border:1px solid #dbb553;margin-left:-50px;bottom:-6px;width:100px;left:50%;}
+.bold_p{font-weight:bold}
