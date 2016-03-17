@@ -75,17 +75,25 @@ $(function(){
         return;
      }
      if(doing){
+       alert('正在预约...');
        return;
      }
      $("#go_order").val('正在预约...');
     doing = true;
     var url = '/action/public/v3/closed_fund_leads';
     $.post(url, {
-      name : name,
-      tel : tel,
-      product : product
-    }, function(){
-      alert('预约成功！稍后会有工作人员联系您！');
+      username : name,
+      phone : tel,
+      title : product
+    }, function(rs){
+      if(rs && rs.error_code == 0){
+        alert('预约成功！稍后会有工作人员联系您！');
+        $("#go_order").val('预约成功');
+      }else{
+        doing = false;
+        $("#go_order").val('立即预约');
+        alert((rs && rs.error_msg) || "失败，请联系客服。");
+      }
     });
   });
 });
