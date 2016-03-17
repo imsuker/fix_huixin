@@ -5,6 +5,7 @@
 .fix_box tr{font-size:16px;border:1px solid #d2d2d2;color:#333;}
 .fix_box th{background:#ededed;width:168px;}
 .fix_box td{padding:7px 40px;box-sizing:content-box;line-height:26px;height:38px;}
+.fix_box:last-child{margin-bottom:0;}
 
 #fix{background:#ebebeb;margin:0 auto;padding-top:144px;}
 #fix_order{height:56px;border-bottom:2px solid #dbb553;padding:0 30px;}
