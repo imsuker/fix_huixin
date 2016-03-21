@@ -172,10 +172,9 @@ function getCookie(name)
     if(name){
       $("#order_info_name").val(name);
     }
-    //加密的手机号目前不识别
-  //  if(phone){
-  //    $("#order_info_tel").val(phone);
-  //  }
+    if(phone){
+      $("#order_info_tel").val(phone);
+    }
     var sHtml = [
       '<li class="psl_nav_info">',
       '  <div class="psl_nav_info__wrapper">',
