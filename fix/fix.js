@@ -202,8 +202,4 @@ function getCookie(name)
   });
 }();
 
-//协议里违约金根据操盘手变化
-$(function(){
-  
-})();
 
