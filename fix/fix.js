@@ -168,6 +168,7 @@ function getCookie(name)
     $('.navbar-right').show();
     var name = (rs && rs.realname) || "";
     var phone = (rs && rs.phone) || "";
+    var username = (rs && rs.username) || "";
     if(name){
       $("#order_info_name").val(name);
     }
@@ -178,7 +179,7 @@ function getCookie(name)
     var sHtml = [
       '<li class="psl_nav_info">',
       '  <div class="psl_nav_info__wrapper">',
-      '    <h4 class="psl_nav_info__name">'+name+'</h4>',
+      '    <h4 class="psl_nav_info__name">'+username+'</h4>',
       '    <div>',
       '      <a class="psl_nav_info__enter" href="https://www.tigerwit.com/personal/#/personal/invest/position" target="_blank">个人中心</a>',
       '    </div>',
