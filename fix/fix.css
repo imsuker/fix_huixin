@@ -63,9 +63,9 @@
 .navbar-right{display:none;}
 .list-bg{min-height:880px;background-image:url(https://dn-mtigerwit.qbox.me/ba9cb76c4a8654008d4e0ad793c/images/bg-index.png);background-color:#000;background-attachment:fixed;background-repeat:no-repeat;background-position:50% 0}
 .list-container{width:1060px;margin:0 auto;padding-top:120px;padding-bottom:120px;}
-.h-ul{background-color:rgba(0,0,0,0.4);margin-top:30px;font-size:18px;}
+.h-ul{background-color:rgba(0,0,0,0.4);margin-top:30px;font-size:16px;}
 .h-ul-title{border-bottom:1px solid #dbb553;}
-.h-ul-title h2{color:#dbb554;line-height:2;font-size:16px;font-weight:normal;margin:0;padding:10px 32px;text-align:left;}
+.h-ul-title h2{color:#dbb554;line-height:2;font-size:18px;font-weight:normal;margin:0;padding:10px 32px;text-align:left;}
 .h-ul-box{}
 .h-li-title{}
 .h-li{float:left;margin:20px 0px;height:100px;padding:20px 0 30px;}
