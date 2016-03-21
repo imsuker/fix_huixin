@@ -48,7 +48,7 @@ tab_lis.click(function(){
 });
 
 
-
+//画进度条
 $(function(){
   $.each(oProgress, function(key, oData){
     var dParent = $(".id-"+key);
@@ -144,3 +144,53 @@ $(function(){
         return null;
     }
 });
+
+//方法获取cookie
+function getCookie(name)
+{
+  var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+  if(arr=document.cookie.match(reg)){
+    return unescape(arr[2]);
+  }
+  else{
+    return null;
+  }
+}
+
+//****登录状态回写用户名到顶部
+~function(){
+  var user_code = getCookie('user_code');
+  if(!user_code){
+    $('.navbar-right').show();
+    return;
+  }
+  $.getJSON('/api/v1/get_info?type=Profile', function(rs){
+    $('.navbar-right').show();
+    var name = (rs && rs.realname) || "";
+    var phone = (rs && rs.phone) || "";
+    if(name){
+      $("#order_info_name").val(name);
+    }
+    if(phone){
+      $("#order_info_tel").val(phone);
+    }
+    var sHtml = [
+      '<li class="psl_nav_info">',
+      '  <div class="psl_nav_info__wrapper">',
+      '    <h4 class="psl_nav_info__name">'+name+'</h4>',
+      '    <div>',
+      '      <a class="psl_nav_info__enter" href="https://www.tigerwit.com/personal/#/personal/invest/position" target="_blank">个人中心</a>',
+      '    </div>',
+      '  </div>',
+      '  <span>',
+      '    <a class="psl_nav_info__avatar" href="https://www.tigerwit.com/personal/#/personal/invest/position" target="_blank">',
+      '    <img src="/avatar/'+user_code+'_80.jpg" alt="头像" />',
+      '    </a>',
+      '  </span>',
+      '</li>'
+    ];
+    $(".navbar-right").html(sHtml.join(''));
+  });
+}();
+
+

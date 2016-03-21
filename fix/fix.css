@@ -60,3 +60,4 @@
 #fix_notes .progress_finish{height:10px;background:#74ceff;position:absolute;left:0;top:0;border-radius:10px;}
 #fix_notes .progress_now{float:left;font-weight:bold;display:none;font-size:14px;color:black;}
 .agreement_book{text-decoration:underline;color:#74ceff}
+.navbar-right{display:none;}
