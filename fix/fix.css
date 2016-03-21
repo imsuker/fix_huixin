@@ -76,7 +76,7 @@
 .h-li-5{padding-top:10px;width:22%}
 .h-li-1 .h-li-title{margin:0}
 .h-li-title{color:#fff;text-align:center;}
-.h-li-detail{color:#23c3f4;text-align:center;}
+.h-li-detail{color:#23c3f4;text-align:center;font-size:24px;}
 .h-li-income{color:#dbb554;font-size:40px;}
 .h-order{background:#23c3f4;border-radius:20px;display:inline-block;padding:8px 30px;font-size:14px;line-height:1.4;font-weight:400;color:#fff;border:1px solid #23c3f4}
 .h-order:hover{background:none;color:#fff;}
