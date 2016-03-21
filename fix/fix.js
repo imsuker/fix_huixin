@@ -21,7 +21,7 @@ var oProgress = {
     'huixin_week.html' : '赵海峰(主操盘手)',
     'huixin_quarter.html' : '赵海峰(主操盘手)',
     'huixin_year.html' : '赵海峰(主操盘手)',
-    'zhangwei_year.html' : '张伟(主操盘手)'
+    'zhangwei_month.html' : '张伟(主操盘手)'
   };
 
 
