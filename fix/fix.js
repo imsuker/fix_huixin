@@ -117,7 +117,8 @@ $(function(){
     });
     var href = $(this).attr('href').replace(/\?.*/g,'') +'?'+ $.param({
         yifang : $('#order_info_name').val() || "",
-        jiafang : sJiafang
+        jiafang : sJiafang,
+        product : $.trim($("#fix_title").text()) || ""
     });
     $(this).attr('href',href);
   });
@@ -133,8 +134,15 @@ $(function(){
     }
     var sJiafang = getQueryString('jiafang') || "";
     var sYifang = getQueryString('yifang') || "";
+    var sProduct = getQueryString('product') ||"" ;
     dJia.html(sJiafang);
     dYi.html(sYifang);
+    if(sProduct == "老虎&汇赢周盈+201604-1"){
+        $("#agreement_money").html('乙方无需向甲方支付委托费，');
+    }else if(sProduct == "老虎&Elephant(Forex+Management)"){
+        $("#agreement_money").html('乙方应将盈余部分按30%作为委托费支付给甲方，');
+    }
+
     function getQueryString(name) {
         var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
         var r = window.location.search.substr(1).match(reg);
@@ -194,4 +202,8 @@ function getCookie(name)
   });
 }();
 
+//协议里违约金根据操盘手变化
+$(function(){
+  
+})();
 
