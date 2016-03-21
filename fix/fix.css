@@ -61,3 +61,27 @@
 #fix_notes .progress_now{float:left;font-weight:bold;display:none;font-size:14px;color:black;}
 .agreement_book{text-decoration:underline;color:#74ceff}
 .navbar-right{display:none;}
+.list-bg{min-height:880px;background-image:url(https://dn-mtigerwit.qbox.me/ba9cb76c4a8654008d4e0ad793c/images/bg-index.png);background-color:#000;background-attachment:fixed;background-repeat:no-repeat;background-position:50% 0}
+.list-container{width:1060px;margin:0 auto;padding-top:120px;padding-bottom:250px;}
+.h-ul{background-color:rgba(0,0,0,0.4);margin-top:30px;font-size:18px;}
+.h-ul-title{border-bottom:1px solid #dbb553;}
+.h-ul-title h2{color:#dbb554;line-height:2;font-size:16px;font-weight:normal;margin:0;padding:10px 32px;text-align:left;}
+.h-ul-box{}
+.h-li-title{}
+.h-li{float:left;margin:20px 0px;height:100px;padding:20px 0 30px;}
+.h-li-1{background-color:rgba(0,0,0,.4);margin:0;padding:30px 0 30px;height:140px;width:23%}
+.h-li-2{border-right:1px dashed  #b29752;width:23%;}
+.h-li-3{border-right:1px dashed  #b29752;width:16%;}
+.h-li-4{border-right:1px dashed  #b29752;width:16%;}
+.h-li-5{padding-top:10px;width:22%}
+.h-li-1 .h-li-title{margin:0}
+.h-li-title{color:#fff;text-align:center;}
+.h-li-detail{color:#23c3f4;text-align:center;}
+.h-li-income{color:#dbb554;font-size:40px;}
+.h-order{background:#23c3f4;border-radius:20px;display:inline-block;padding:8px 30px;font-size:14px;line-height:1.4;font-weight:400;color:#fff;border:1px solid #23c3f4}
+.h-order:hover{background:none;color:#fff;}
+.h-arrow{vertical-align:-3px;margin-left:6px;}
+.h-pre{background:#dbb553;border:1px solid #dbb553;color:#000;cursor:not-allowed}
+.h-pre:hover{background:#dbb553;color:#000}
+
+.clearfix{overflow:hidden;_zoom:1;}
