@@ -72,6 +72,10 @@ $(function(){
       alert('需要同意并遵守"协议书"才可以预约该产品!');
       return;
     }
+    if($(this).hasClass('trading')){
+      alert('该产品已经开始交易，暂时无法预约');
+      return;
+    }
      var name = $('#order_info_name').val();
      var tel = $("#order_info_tel").val();
      var product = $.trim($("#fix_title").text());
