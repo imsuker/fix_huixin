@@ -14,10 +14,14 @@ var oProgress = {
   },
   'week' : {  //huixin_week.html
     now : 100 
+  },
+  'week-201604-2' : {  //huixin_week_201604_2.html
+    now : 26 
   }
 };
 //各个产品页面，点击委托协议书后，显示的甲方名字
   var aJiafang = {
+    'huixin_week_201604_2.html' : '赵海峰(主操盘手)',
     'huixin_week.html' : '赵海峰(主操盘手)',
     'huixin_quarter.html' : '赵海峰(主操盘手)',
     'huixin_year.html' : '赵海峰(主操盘手)',
