@@ -71,13 +71,13 @@ $(function(){
 $(function(){
   var doing = false;
   $("#go_order").click(function(){
+    if($(this).hasClass('trading')){
+      alert('该产品目前无法预约');
+      return;
+    }
     var agree = $(".check_agreement input").prop('checked');
     if(!agree){
       alert('需要同意并遵守"协议书"才可以预约该产品!');
-      return;
-    }
-    if($(this).hasClass('trading')){
-      alert('该产品已经开始交易，暂时无法预约');
       return;
     }
      var name = $('#order_info_name').val();

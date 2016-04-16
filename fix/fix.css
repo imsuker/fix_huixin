@@ -13,9 +13,13 @@
 #fix_title{font-size:22px;float:left;color:#dbb553;height:56px;line-height:56px;}
 
 #fix_summary{height:266px;float:left;width:66%;border-right:1px solid #dbb553;padding:0 30px;}
-#order_info{height:266px;float:left;width:34%;position:relative;padding-top:56px;}
-#order_info .info_input{height:39px;width:313px;display:block;border:1px solid #d2d2d2;margin:0 auto 30px;padding:0 5px;color:#848484;font-size:16px;}
-#order_info input#go_order{height:49px;border:1px solid #dbb553;background:#dbb553;position:absolute;bottom:0;width:100%;margin-bottom:0;padding:0;color:#fff;font-size:26px;}
+.order_info{height:266px;float:left;width:34%;position:relative;padding-top:56px;}
+.order_info .info_input{height:39px;width:313px;display:block;border:1px solid #d2d2d2;margin:0 auto 30px;padding:0 5px;color:#848484;font-size:16px;}
+.order_info input#go_order{height:49px;border:1px solid #dbb553;background:#dbb553;position:absolute;bottom:0;width:100%;margin-bottom:0;padding:0;color:#fff;font-size:26px;}
+.order_info p{text-align:center;}
+.order_info_over{padding-top:30px;}
+.order_info_over .now{font-size:40px;line-height:1.5}
+.order_info_over .last{color:#dbb553;font-size:18px;margin-left:4px;}
 #fix_details{height:156px;padding:30px 0;}
 #fix_details li{float:left;height:100px;width:20%;border-right:1px dashed #dbb553;padding-top:12px;text-align:left;padding-left:20px;}
 #fix_details li:first-child{width:40%;}
@@ -69,7 +73,7 @@
 .h-ul-box{}
 .h-li-title{}
 .h-li{float:left;margin:20px 0px;height:100px;padding:20px 0 30px;}
-.h-li-1{background-color:rgba(0,0,0,.4);margin:0;padding:30px 0 30px;height:140px;width:23%}
+.h-li-1{background-color:rgba(0,0,0,.4);margin:0;padding:30px 0 30px;height:150px;width:23%}
 .h-li-2{border-right:1px dashed  #b29752;width:23%;}
 .h-li-3{border-right:1px dashed  #b29752;width:16%;}
 .h-li-4{border-right:1px dashed  #b29752;width:16%;}
@@ -77,7 +81,8 @@
 .h-li-1 .h-li-title{margin:0}
 .h-li-title{color:#fff;text-align:center;}
 .h-li-detail{color:#23c3f4;text-align:center;font-size:24px;}
-.h-li-income{color:#dbb554;font-size:40px;}
+.h-li-hint{color:#dbb554;text-align:center;}
+.h-li-income{color:#dbb554;font-size:40px;margin-bottom:0}
 .h-order{background:#23c3f4;border-radius:20px;display:inline-block;padding:8px 30px;font-size:14px;line-height:1.4;font-weight:400;color:#fff;border:1px solid #23c3f4}
 .h-order:hover{background:none;color:#fff;}
 .h-arrow{vertical-align:-3px;margin-left:6px;}
@@ -85,3 +90,6 @@
 .h-pre:hover{background:#dbb553;color:#000}
 
 .clearfix{overflow:hidden;_zoom:1;}
+.blue{color:#23c3f4}
+.h-order-over{background:#000;border-color:#000}
+.h-order-over:hover{background:#000;border-color:#000}
