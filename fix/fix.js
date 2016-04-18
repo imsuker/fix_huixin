@@ -17,6 +17,9 @@ var oProgress = {
   },
   'week-201604-2' : {  //huixin_week_201604_2.html
     now :100 
+  },
+  'week-201604-3' : {  //huixin_week_201604_3.html
+    now :66 
   }
 };
 //各个产品页面，点击委托协议书后，显示的甲方名字
